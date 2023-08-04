@@ -5,16 +5,21 @@ const Game = (props) => {
 
     return (
         <>
-            <div className='flex items-center justify-center  '>
+            <div className='box'>
 
-            
-                <img src={img} alt="" />
-                <div className="flex flex-col items-center justify-center">
+                <div className="right">
+                    <a href={link} target='_blank'>
+
+                        <img src={img} alt="" />
+
+                    </a>
+                </div>
+                <div className="left">
 
                     <h3>{name}</h3>
 
 
-                    <div className='flex gap-5 items-center justify-center'>
+                    <div className='btn-box'>
 
                         <button>
                             <a href={link} target='_blank'>Live</a>
@@ -22,7 +27,7 @@ const Game = (props) => {
                         </button>
 
                         <button>
-                            <a href={repo} target='_blank'>Github Repo</a>
+                            <a href={repo} target='_blank'>Code</a>
 
 
                         </button>
